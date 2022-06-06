@@ -1,0 +1,254 @@
+* {box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+max-width: 100%;
+font-family: Arial,Verdana,"Times New Roman",Courier,"Courier New",Georgia,lucida,tahoma,Monospace;}
+
+.container {background-color: pink;
+height: auto;
+width: 100%;
+padding: 50px 80px;}
+
+.page { background-color: white;
+height: auto;
+width: 100%;
+border-radius: 10px;
+padding: 30px 0px 0px 0px;}
+
+.section { background-image: url('images/images.jpeg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px auto;
+
+max-width: 100%;}
+
+.header {padding: 30px 20px;
+  margin: 0px 0px 50px 0px;}
+
+.hicon { float: left;
+position: relative;
+top: 0;
+left: 0;}
+
+.hicon img {width: 30px;
+height: 25px;
+transition-duration: transform;
+  cursor: pointer;}
+  
+.hicon img:hover { transition: 0.3s ease;
+transform: scale(1.5);}
+
+.hlist ul{ float: right;}
+
+.hlist ul li { 
+float: left;
+list-style-type: none;
+padding-right: 10px;}
+
+.hlist a {text-decoration: none;
+  font-weight: bold;
+  font-family: "Tahoma";
+   color: white;}
+   .hlist a:hover {border: none;
+border-left: 3px solid black;
+padding: 5px;
+     outline: none;}
+
+.hlist .signin { background-color: white;
+color: black;
+border-radius: 30px;
+padding: 5px 20px;
+margin-left: 20px;
+font-weight: normal;}
+
+.hlist .signin:hover {color: white;
+background-color: black;
+border-radius: 10px;
+  font-weight: bold;
+  outline: none;}
+
+.fire {width: 60%;
+margin: 70px 50px 100px 50px;}
+
+.fire h1 {color: white;
+font-size: 55px;
+font-family: arial;
+font-weight: bold;
+padding-bottom: 30px;}
+
+.fire .span {margin: 5px 0px 0px 30px;
+color: honeydew;
+  word-spacing: 2px;
+  letter-spacing: -1px;}
+
+.fire p {color: white;
+font-family: Tahoma;
+font-size: 20px;
+  cursor: text;
+}
+
+.water a {
+  text-decoration: none;
+margin-left: 150px;
+color: white;
+box-shadow: 0 3px #9999;
+background-color: tomato;
+padding: 10px 35px;
+border-radius:8px;}
+
+.water a:hover {position: relative;
+top: 5px;
+box-shadow: none;
+  color: tomato;
+background-color: white;
+border:none;
+cursor: pointer;
+padding: 7px 35px;
+border-bottom: 3px solid tomato;
+}
+
+.cars {display: flex;
+  padding:20px 10px 10px 15px;}
+  
+.car {display: flex;
+  padding: 10px 10px 10px 15px;}
+  
+.cars .toyota h2, .car .lexus h2  {margin-bottom: 15px;
+font-family: "Times New Roman";
+  font-weight: bold;}
+
+.cars .toyota p, .car .lexus p  {font-family: verdana;
+  font-weight: normal;}
+
+.ads a {text-decoration: none;
+color: red;
+font-weight: bold;
+font-size: 18px;
+  font-family: Monospace;}
+  
+.process h1 {text-align: center;
+color: red;
+margin: 10px 0px;
+font-family: Verdana;}
+
+.process p { text-align: center;
+font-size: 18px;
+  padding: 0px 5px;
+}
+
+.flexp {display: flex;
+ max-width: 100%;
+ overflow: auto;
+}
+
+.example img {margin: 10px 0px;
+height: auto;
+width: 400px
+}
+
+footer {border-radius: 3px;
+background-color: black;
+width: 100%;
+padding: 15px 0px;}
+.media-icons {display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;}
+
+.media-icons a{
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-size: 25px;
+  transition: 0.3s ease;
+  transition-property: transform;}
+
+.media-icons a:not(:last-child){
+  margin-right: 60px;
+}
+
+.media-icons a:hover{
+  transition: 0.9s ease;
+  transform: scale(1.9);
+}
+
+footer ul {text-align: center;}
+footer li {list-style-type: none;
+padding: 0px 15px;
+display: inline-block;}
+
+.down a {text-decoration: none;
+  color: white;
+  padding-top: 8px;
+font-weight: bold;
+font-size: 18px;
+font-family: verdana;}
+#check {display: none;}
+label {display: none;}
+
+@media screen and (max-width:560px)
+{
+  label {display: block;
+    position: relative;
+  float: right;
+cursor: pointer;
+  color: white;
+  font-size: 40px;}
+  
+  .header .hlist {display: none;}
+  
+  .header .fa-regular {display: none;}
+  
+    #check:checked ~ .header .hlist{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: pink;
+    display: inline;
+    padding-top: 100px;
+  }
+
+  #check:checked ~  .header .headlist a{
+    font-weight: 700;
+    margin: 10px 100px;
+    letter-spacing: 2px;
+    position: fixed;
+    display: inline;
+  }
+
+  #check:checked ~ .header label .fa-regular{
+    z-index: 3;
+    transition: 0.2s ease;
+    position: fixed;
+    display: block;}
+
+  #check:checked ~ .header label .fa-bars{
+    display: none;
+  }
+  
+  .hicon img {width:40px;
+    height: 30px;}
+    
+  .container {padding: 10px 10px;
+  width: 100%;
+  height: auto;}
+ .page {padding: 20px 0px 0px 0px;
+    width: 100%;
+    height: auto;}
+ .fire {width: 95%;
+      margin: 70px 5px 100px 5px;}
+.fire h1 {font-size: 30px;}
+.fire p{font-size: 13px;
+     overflow-x: scroll;}
+ .water a {margin-left: 15px;
+       padding: 5px 25px;}
+.cars,.car {display: inline-block;}
+.toyota h2, .lexus h2 {margin: 0px 0px 5px 0px;
+font-size: 17px;}
+.toyota p, .lexus p, .process p, .ads a {font-size: 10px;}
+.process h1 {font-size: 20px;}
+.flexp {display: inline-block;}
+.down a {font-size: 15px;}
+}
